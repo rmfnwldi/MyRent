@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+#bennerimage {
+	z-index: 2;
+	opacity: 0.5;
+}
+
+#bennercolor {
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.5);
+	height: 300px;
+	width: 100%;
+	top: 160px;
+	z-index: 1;
+	text-align: center;
+	font-size: 40px;
+	font-weight: bolder;
+	color: white;
+	line-height: 300px;
+}
+
+#containerbody {
+	text-align: center;
+}
+
+#sidemenu {
+	color: black;
+	text-align: left;
+	float: left;
+	padding-left: 50px;
+	list-style: none;
+	width: 15%;
+	margin-top: 85.2px;
+}
+
+#sidemenu a {
+	padding-left: 15px;
+	display: inline-block;
+	width: 100%;
+}
+
+#sidemenu li {
+	width: 100%;
+	margin-bottom: 2px;
+	cursor: pointer;
+	background-color: #ccc;
+	height: 50px;
+	line-height: 50px;
+}
+
+#maintext {
+	display: inline-block;
+	width: 75%;
+	margin: 0;
+	padding: 0;
+	background-color: white;
+	text-align: center;
+}
