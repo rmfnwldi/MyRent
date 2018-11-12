@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+a:hover {
+	text-decoration: none;
+	color: white;
+}
+
 #bennerimage {
 	z-index: 2;
 	opacity: 0.5;

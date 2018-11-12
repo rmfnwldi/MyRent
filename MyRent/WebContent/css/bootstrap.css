@@ -70,7 +70,8 @@ a {
 }
 
 a:active, a:hover {
-	outline: 0;
+	text-decoration: none;
+	color: white;
 }
 
 abbr[title] {
