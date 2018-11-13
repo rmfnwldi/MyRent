@@ -33,7 +33,7 @@
 						</tr>
 					</tbody>
 				</table>
-				<input type="submit" class="btn btn-primary pull-right" value="글쓰기 ">
+				<input type="submit" class="btn btn-primary pull-right" value="등록하기 ">
 			</form>
 		</div>
 	</div>
