@@ -15,7 +15,7 @@
 		<input type="text" id="inputID" class="form-control" placeholder="ID" required autofocus>
 		<input type="password" id="inputPW" class="form-control" placeholder="PW" required>
 		<button class="btn btn-lg btn-primary btn-block" type="submit">로그인</button>
-		<a href="pagejoin.jsp">회원가입</a>
+		<a href="pagejoin.jsp" style="color: black;">회원가입</a>
 	</form>
 </body>
 </html>

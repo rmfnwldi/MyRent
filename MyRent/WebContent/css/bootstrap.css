@@ -69,7 +69,7 @@ a {
 	cursor: pointer;
 }
 
-a:active, a:hover {
+a:hover {
 	text-decoration: none;
 	color: white;
 }
@@ -243,7 +243,6 @@ optgroup {
 
 table {
 	border-spacing: 0;
-	border-collapse: collapse;
 }
 
 td, th {
@@ -259,7 +258,7 @@ td, th {
 		box-shadow: none !important;
 	}
 	a, a:visited {
-		text-decoration: underline;
+		text-decoration: none;
 	}
 	a[href]:after {
 		content: " (" attr(href) ")";
@@ -1420,7 +1419,7 @@ a {
 
 a:hover, a:focus {
 	color: #23527c;
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 a:focus {
@@ -3480,28 +3479,28 @@ a.btn.disabled, fieldset[disabled] a.btn {
 .btn-primary {
 	
 	color: #fff;
-	background-color: #daa517;
-	border-color: #daa517;
+	background-color: #717b71;
+	border-color: #717b71;
 	
 }
 
 .btn-primary:focus, .btn-primary.focus {
 	color: #fff;
-	background-color: #286090;
-	border-color: #122b40;
+	background-color: #717b71;
+	border-color: #717b71;
 }
 
 .btn-primary:hover {
 	color: #fff;
-	background-color: #a96e09;
-	border-color: #a96e09;
+	background-color: #2b2926;
+	border-color: #2b2926;
 }
 
 .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary
 	{
 	color: #fff;
-	background-color: #286090;
-	border-color: #204d74;
+	background-color: #717b71;
+	border-color: #717b71;
 }
 
 .btn-primary:active:hover, .btn-primary.active:hover, .open>.dropdown-toggle.btn-primary:hover,
@@ -3509,8 +3508,8 @@ a.btn.disabled, fieldset[disabled] a.btn {
 	.btn-primary:active.focus, .btn-primary.active.focus, .open>.dropdown-toggle.btn-primary.focus
 	{
 	color: #fff;
-	background-color: #204d74;
-	border-color: #122b40;
+	background-color: #717b71;
+	border-color: #717b71;
 }
 
 .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary
@@ -3756,7 +3755,7 @@ a.btn.disabled, fieldset[disabled] a.btn {
 
 .btn-link:hover, .btn-link:focus {
 	color: #23527c;
-	text-decoration: underline;
+	text-decoration: none;
 	background-color: transparent;
 }
 
@@ -7542,8 +7541,8 @@ button.close {
 
 .pull-right {
 	position: relative;
-    left: 80%;
     margin-bottom: 20px;
+    right: 13%;
 }
 
 .pull-left {

@@ -83,7 +83,7 @@
 					</tr>
 				</tbody>
 			</table>
-			<a href="writeBoard.jsp" class="btn btn-primary pull-right">글쓰기</a>
+			<a href="writeArticle.jsp" class="btn btn-primary pull-right">글쓰기</a>
 		</div>
 	</div>
 </div>

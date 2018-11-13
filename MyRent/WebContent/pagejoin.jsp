@@ -22,7 +22,7 @@
 		<input type="text" id="team" class="form-control" placeholder="소속" required >
 		<input type="date" id="date" class="form-control" placeholder="생년월일" required >
 		<button class="btn btn-lg btn-primary btn-block" type="submit">가입</button>
-		<a href="pagelogin.jsp">가입취소</a>
+		<a href="pagelogin.jsp" style="color: black;">가입취소</a>
 	</form>
 </body>
 </html>
