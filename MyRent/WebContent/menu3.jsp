@@ -1,7 +1,7 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <jsp:include page="header.jsp"></jsp:include>
 <link rel="stylesheet" type="text/css" href="css/menu3.css">
-<link rel="stylesheet" href="css/bootstrap.css">
 </head>
 <jsp:include page="topMenu.jsp"></jsp:include>
 <div id="container">
@@ -10,14 +10,14 @@
 	</div>
 	<div id="bennercolor">Q &amp; A</div>
 	<div id="containerbody">
-		<div class="row">
-			<table class="table table-striped" style="text-align: center; border: 5px solid #dddddd">
-				<thead>
+		<div id="divtable">
+			<table id="articletable" style="text-align: center; border: 5px solid #dddddd">
+				<thead >
 					<tr>
-						<th style="background-color: #eeeeee; text-align: center;">번호</th>
-						<th style="background-color: #eeeeee; text-align: center;">제목</th>
-						<th style="background-color: #eeeeee; text-align: center;">작성자</th>
-						<th style="background-color: #eeeeee; text-align: center;">작성일</th>
+						<th>번호</th>
+						<th>제목</th>
+						<th>작성자</th>
+						<th>작성일</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -83,7 +83,10 @@
 					</tr>
 				</tbody>
 			</table>
-			<a href="writeArticle.jsp" class="btn btn-primary pull-right">글쓰기</a>
+			<div id="divbtn">
+				<button id="btnwrite"
+					onclick="javascript:location.href='writeArticle.jsp'">글쓰기</button>
+			</div>
 		</div>
 	</div>
 </div>

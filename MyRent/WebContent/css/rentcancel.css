@@ -1,10 +1,5 @@
 @charset "UTF-8";
 
-a:hover {
-	text-decoration: none;
-	color: white;
-}
-
 #bennerimage {
 	z-index: 2;
 	opacity: 0.5;
@@ -23,7 +18,6 @@ a:hover {
 	color: white;
 	line-height: 300px;
 }
-
 
 #containerbody {
 	text-align: center;
@@ -49,31 +43,19 @@ a:hover {
 	width: 100%;
 	margin-bottom: 2px;
 	cursor: pointer;
+	background-color: #ccc;
+	height: 50px;
+	line-height: 50px;
 }
-
-#sidemenu>li:nth-child(2), #sidemenu>li:nth-child(2)>a {
+#sidemenu>li:nth-child(3), #sidemenu>li:nth-child(3)>a {
 	background-color: blue;
 	color: white;
 	height: 50px;
 	line-height: 50px;
 }
 
-#sidemenu>li:nth-child(1), #sidemenu>li:nth-child(4) {
+#sidemenu>li:nth-child(2), #sidemenu>li:nth-child(1), #sidemenu>li:nth-child(4) {
 	background-color: #ccc;
-	height: 50px;
-	line-height: 50px;
-}
-
-#roominfo>li {
-	background-color: #ccc;
-	width: 100%;
-	height: 50px;
-	line-height: 50px;
-}
-
-#roominfo>li:nth-child(2), #roominfo>li:nth-child(2)>a {
-	background-color: blue;
-	color: white;
 	height: 50px;
 	line-height: 50px;
 }
@@ -84,14 +66,5 @@ a:hover {
 	margin: 0;
 	padding: 0;
 	background-color: white;
-}
-
-iframe {
-	border: 0px;
-}
-
-#roominfo {
-	text-align: left;
-	padding-left: 50px;
-	list-style: none;
+	text-align: center;
 }

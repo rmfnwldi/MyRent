@@ -99,10 +99,9 @@
 		</div>
 		<div class="contents">
 			<div style="background-color: blue;">게시판</div>
-			<div style="background-color: red;">
-				동영상
-				<br>
-				<iframe src="https://player.vimeo.com/video/262909418?title=1&portrait=0" width="100%" height="330" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+			<div>
+				<font size="10px" style="padding-left: 10%;">동영상</font><sub><a href="https://vimeo.com/haja/videos">&emsp;더보기➤</a></sub>
+				<iframe src="https://player.vimeo.com/video/262909418?title=1&portrait=0" width="100%" height="500px" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 			</div>
 		</div>
 	</div>

@@ -15,7 +15,7 @@ a:hover {
 	background-color: rgba(0, 0, 0, 0.5);
 	height: 300px;
 	width: 100%;
-	top: 160px;
+	top: 179px;
 	z-index: 1;
 	text-align: center;
 	font-size: 40px;
@@ -84,7 +84,6 @@ a:hover {
 	margin: 0;
 	padding: 0;
 	background-color: white;
-	margin-bottom: 100px;
 }
 
 iframe {

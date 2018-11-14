@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <jsp:include page="header.jsp"></jsp:include>
-<link rel="stylesheet" type="text/css" href="css/menu2.css">
+<link rel="stylesheet" type="text/css" href="css/rentcheck.css">
 </head>
 <jsp:include page="topMenu.jsp"></jsp:include>
 <div id="container">
@@ -12,7 +12,7 @@
 		<div>
 			<ul id="sidemenu">
 				<li>
-					<a href="javascript:location.reload();">대관 신청</a>
+					<a href="menu2.jsp">대관 신청</a>
 				</li>
 				<li>
 					<a href="rentlookup.jsp">신청 조회</a>
@@ -21,13 +21,13 @@
 					<a href="rentcancel.jsp">신청 취소</a>
 				</li>
 				<li>
-					<a href="rentcheck.jsp">결과 확인</a>
+					<a href="javascript:location.reload();">결과 확인</a>
 				</li>
 			</ul>
 		</div>
 		<div id="maintext">
 			<br>
-			<h1 style="color: red;">대관 신청</h1>
+			<h1 style="color: red;">결과 확인</h1>
 			<br>
 			<br>
 			<br>
