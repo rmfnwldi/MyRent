@@ -68,3 +68,98 @@
 	background-color: white;
 	text-align: center;
 }
+
+
+#month{
+	 color: #757575;
+	 font-size: 30px;
+	 margin-left: 50px;
+	 margin-right: 50px;
+}
+
+
+/* 테이블 CSS */
+#divtable {
+	margin-right: 20px;
+	margin-left: 20px;
+	margin-bottom: 300px;
+}
+
+table {
+	width: 100%;
+	max-width: 75%;
+	margin: auto;
+	margin-top: 15px;
+	margin-bottom: 20px;
+	border-collapse: collapse;
+	background-color: transparent;
+}
+
+table thead {
+	background-color: #eeeeee;
+}
+
+th {
+	text-align: center;
+	height: 70px;
+}
+
+tr td {
+	padding: 15px;
+	line-height: 1.5;
+	vertical-align: center;
+	border: 5px solid #ddd;
+	height: 70px;
+}
+
+
+
+.btn {
+	display: inline-block;
+	padding: 6px 12px;
+	margin-bottom: 0;
+	font-size: 15px;
+	font-weight: normal;
+	line-height: 2;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+	background-color: #717b71;
+	border: 1px solid #717b71;
+	border-radius: 4px;
+	color: white;
+}
+
+
+
+
+
+
+
+.btncalender:hover{
+	color: white;
+	background-color: #2b2926;
+	border-color: #2b2926;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
