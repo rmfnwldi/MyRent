@@ -10,8 +10,8 @@
 	</div>
 	<div id="bennercolor">찾 아 오 는 길</div>
 	<br>
-	<h1>하 자 센 터</h1>
-	<h2>청소년직업체험센터</h2>
+	<h1 style="color: #757575">하 자 센 터</h1>
+	<h2 style="color: #757575">청소년직업체험센터</h2>
 	<br>
 	<div id="address">
 		<b>주소</b> : 서울특별시 영등포구 영신로 200
@@ -25,7 +25,7 @@
 		<b>팩스번호</b> : 02-2679-9300
 	</div>
 	<div class="text">
-		<h2>버스 이용시</h2>
+		<h2 style="color: #757575">버스 이용시</h2>
 		<br>
 		<ul class="textlist">
 			<li><b>지선버스</b> : 5616, 5714, 6514</li>
@@ -35,7 +35,7 @@
 		</ul>
 	</div>
 	<div class="text">
-		<h2>지하철 이용시</h2>
+		<h2 style="color: #757575">지하철 이용시</h2>
 		<br>
 		<ul class="textlist">
 			<li><b>5호선</b> : 영등포시장역 1번 출구 도보 7분</li>

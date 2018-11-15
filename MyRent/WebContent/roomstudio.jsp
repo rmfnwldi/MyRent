@@ -54,7 +54,7 @@
 		</div>
 		<div id="maintext">
 			<br>
-			<h1 style="color: red;">커뮤니티 스튜디오</h1>
+			<h1 style="color: #757575;">커뮤니티 스튜디오</h1>
 			<br>
 			<img src="image/place3.jpg" width="100%">
 		</div>

@@ -11,7 +11,7 @@
 </head>
 <body class="text-center" oncontextmenu="return false" ondragstart="return false" onselect="return false">
 	<form action="#" method="post" class="form-signin" >
-		<img class="mb-4" src="image/logo.png" >
+		<a href="main.jsp"><img id="logo" class="mb-4" src="image/logoeng.PNG"></a>
 		<input type="text" id="inputID" class="form-control" placeholder="ID" required autofocus>
 		<input type="password" id="inputPW" class="form-control" placeholder="PW" required>
 		<button class="btn btn-lg btn-primary btn-block" type="submit">로그인</button>

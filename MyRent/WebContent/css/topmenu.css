@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+#topmenubody {
+	background-color: #F3F3F3;
+}
+
 a:link {
 	text-decoration: none;
 	color: black;
@@ -22,20 +26,20 @@ a:hover {
 
 #imgLogo {
 	width: 100%;
-    height: 100%;
+	height: 100%;
 }
 
 #divlogin {
 	height: 50px;
 	text-align: right;
-	background-color: #869294d4;
+	background-color: #E1E1E1;
 }
 
 #navMenu {
 	display: flex;
-    width: 100%;
-    top: 0px;
-    height: 100%;
+	width: 100%;
+	top: 0px;
+	height: 100%;
 }
 
 #divLogo {
@@ -47,9 +51,9 @@ a:hover {
 }
 
 #mainMenu {
-    list-style: none;
-    flex: 3;
-    text-align: center;
+	list-style: none;
+	flex: 3;
+	text-align: center;
 }
 
 #mainMenu>li {

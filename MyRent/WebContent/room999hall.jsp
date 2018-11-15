@@ -55,7 +55,7 @@
 		</div>
 		<div id="maintext">
 			<br>
-			<h1 style="color: red;">999홀</h1>
+			<h1 style="color: #757575;">999홀</h1>
 			<br>
 			<img src="image/place4.jpg" width="100%">
 		</div>

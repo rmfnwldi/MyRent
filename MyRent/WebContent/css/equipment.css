@@ -51,7 +51,7 @@ a:hover {
 }
 
 #sidemenu>li:nth-child(4), #sidemenu>li:nth-child(4)>a {
-	background-color: blue;
+	background-color: #636363;
 	color: white;
 	height: 50px;
 	line-height: 50px;
@@ -84,16 +84,53 @@ a:hover {
 	padding-left: 50px;
 	list-style: none;
 }
-thead{
-	background-color: lightgreen;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+table {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	margin: auto;
+	margin-bottom: 20px;
+	margin-top: 50px;
+	background-color: transparent;
+	border-collapse: collapse;
+	font-size: 16px;
+	border: 5px solid #dddddd;
+}
+
+thead {
+	background-color: #eeeeee;
 	font-size: 22px;
 }
-table{
-	border-collapse: collapse;
-	width: 100%;
-	font-size: 16px;
+
+th {
+	text-align: center;
 }
-th, td{
-	border: 1px solid black;
-	padding: 10px;
+
+tr td {
+	padding: 8px;
+	line-height: 1.5;
+	vertical-align: center;
+	border-collapse: collapse;
+	border: 3px solid #ddd;
+	height: 70px;
 }

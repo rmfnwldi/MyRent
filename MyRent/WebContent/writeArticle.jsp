@@ -24,15 +24,16 @@
 					</tr>
 					<tr>
 						<td>
-							<textarea placeholder="글 내용" name="articleContent" ></textarea>
+							<textarea placeholder="글 내용" name="articleContent"></textarea>
 						</td>
 					</tr>
 				</tbody>
 			</table>
-			<div id="write">
-				<input id="writebtn" type="submit" value="등록하기 ">
+			<div id="divwrite">
+				<button class="btn btnwrite">작성 완료</button>
 			</div>
 		</form>
 	</div>
 </div>
-<jsp:include page="footer.jsp"></jsp:include>
+
+<input type="text" placeholder="안녕">

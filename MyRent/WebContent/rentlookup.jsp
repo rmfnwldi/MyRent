@@ -8,7 +8,7 @@
 		<img src="image/benner.jpg" width="100%" height="300px">
 	</div>
 	<div id="bennercolor">대 관 하 기</div>
-	<div id="containerbody" style="background-color: red;">
+	<div id="containerbody">
 		<div>
 			<ul id="sidemenu">
 				<li>
@@ -27,7 +27,7 @@
 		</div>
 		<div id="maintext">
 			<br>
-			<h1 style="color: red;">신청 조회</h1>
+			<h1 style="color: #757575;">신청 조회</h1>
 			<br>
 			<br>
 			<br>

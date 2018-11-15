@@ -196,7 +196,7 @@ SETTINGS
 
 .sm-link{
     --smLinkLineWeight: 5px;
-    --smLinkLineColor: #243aab;
+    --smLinkLineColor: #636363;
     --smLinkTextColor: #243aab;
     --smLinkTextColorHover: #1b255a;
 }

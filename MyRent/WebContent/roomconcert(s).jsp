@@ -54,7 +54,7 @@
 		</div>
 		<div id="maintext">
 			<br>
-			<h1 style="color: red;">합주실(소)</h1>
+			<h1 style="color: #757575;">합주실(소)</h1>
 			<br>
 			<img src="image/place1.jpg" width="100%">
 		</div>

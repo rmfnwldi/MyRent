@@ -84,7 +84,7 @@
 				</tbody>
 			</table>
 			<div id="divbtn">
-				<button id="btnwrite"
+				<button class="btn btnwrite"
 					onclick="javascript:location.href='writeArticle.jsp'">글쓰기</button>
 			</div>
 		</div>

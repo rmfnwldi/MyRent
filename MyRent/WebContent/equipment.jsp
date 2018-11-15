@@ -54,8 +54,7 @@
 		</div>
 		<div id="maintext">
 			<br>
-			<h1 style="color: red;">장비목록</h1>
-			<br>
+			<font size="20px">장비목록</font>
 			<table>
 				<thead>
 					<tr>
