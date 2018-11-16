@@ -47,6 +47,7 @@
 	height: 50px;
 	line-height: 50px;
 }
+
 #sidemenu>li:nth-child(1), #sidemenu>li:nth-child(1)>a {
 	background-color: #636363;
 	color: white;
@@ -54,7 +55,8 @@
 	line-height: 50px;
 }
 
-#sidemenu>li:nth-child(2), #sidemenu>li:nth-child(3), #sidemenu>li:nth-child(4) {
+#sidemenu>li:nth-child(2), #sidemenu>li:nth-child(3), #sidemenu>li:nth-child(4)
+	{
 	background-color: #ccc;
 	height: 50px;
 	line-height: 50px;
@@ -69,14 +71,12 @@
 	text-align: center;
 }
 
-
-#month{
-	 color: #757575;
-	 font-size: 30px;
-	 margin-left: 50px;
-	 margin-right: 50px;
+#month {
+	color: #757575;
+	font-size: 30px;
+	margin-left: 50px;
+	margin-right: 50px;
 }
-
 
 /* 테이블 CSS */
 #divtable {
@@ -104,15 +104,14 @@ th {
 	height: 70px;
 }
 
-tr td {
+tr, td {
 	padding: 15px;
 	line-height: 1.5;
 	vertical-align: center;
 	border: 5px solid #ddd;
 	height: 70px;
+
 }
-
-
 
 .btn {
 	display: inline-block;
@@ -131,35 +130,9 @@ tr td {
 	color: white;
 }
 
-
-
-
-
-
-
-.btncalender:hover{
+.btncalender:hover {
 	color: white;
 	background-color: #2b2926;
 	border-color: #2b2926;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
