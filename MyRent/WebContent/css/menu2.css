@@ -105,12 +105,59 @@ thead td{
 
 
 td {
-	padding: 15px;
-	line-height: 1.5;
-	text-align : left;
-	border: 5px solid #ddd;
-	height: 70px;
+	padding-right: 15px;
+    padding-left: 25px;
+    padding-top: 10px;
+    padding-bottom: 12px;
+    line-height: 1.5;
+    text-align: left;
+    border: 5px solid #ddd;
+    height: 70px;
 }
+
+
+
+
+.tdtoday{
+
+	background-color: #ccc;
+	
+}
+
+.sptoday{
+	font-weight: bolder;
+	color : green;
+	margin-bottom: 8px;
+}
+
+
+
+.day{
+	font-weight:bolder;
+	color: #fb6b00;
+	margin-bottom: 8px;
+}
+
+.saturday{
+	font-weight:bolder;
+	color: blue;
+	margin-bottom: 8px;
+}
+
+.sunday{
+	font-weight:bolder;
+	color: red;
+	margin-bottom: 8px;
+}
+
+
+
+
+
+
+
+
+
 
 
 

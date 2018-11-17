@@ -51,11 +51,11 @@
 		
 		
 		
-		var DIV_today_start = "<div class='sptoday'>";
-		var DIV_day_start = "<div class='day'>";
-		var DIV_saturday_start = "<div class='saturday'>";
-		var DIV_sunday_start = "<div class='sunday'>";
-		var DIV_end = "</div>";
+		var SP_today_start = "<span class='sptoday'>";
+		var SP_day_start = "<span class='day'>";
+		var SP_saturday_start = "<span class='saturday'>";
+		var SP_sunday_start = "<span class='sunday'>";
+		var SP_end = "</span>";
 
 		var str = "";
 
@@ -102,7 +102,7 @@
 				// 오늘 날짜
 				if (day == today && day_month == month && day_year == year) {
 					str += TD_today_start
-							+ DIV_today_start + day + DIV_end
+							+ SP_today_start + day + SP_end + "<br>"
 							+ "<input type='radio' name='roomselect'>합주실(소)<br>"
 							+ "<input type='radio' name='roomselect'>합주실(대)<br>"
 							+ "<input type='radio' name='roomselect'>커뮤니티<br>"
@@ -118,7 +118,7 @@
 					case 0: // 일요일
 
 						str += TD_sunday_start
-								+ DIV_sunday_start + day + DIV_end
+								+ SP_sunday_start + day + SP_end + "<br>"
 								+ "<input type='radio' name='roomselect'>합주실(소)<br>"
 								+ "<input type='radio' name='roomselect'>합주실(대)<br>"
 								+ "<input type='radio' name='roomselect'>커뮤니티<br>"
@@ -130,7 +130,7 @@
 					case 6: // 토요일
 
 						str += TD_saturday_start
-								+ DIV_saturday_start + day + DIV_end
+								+ SP_saturday_start + day + SP_end + "<br>"
 								+ "<input type='radio' name='roomselect'>합주실(소)<br>"
 								+ "<input type='radio' name='roomselect'>합주실(대)<br>"
 								+ "<input type='radio' name='roomselect'>커뮤니티<br>"
@@ -142,7 +142,7 @@
 
 					default: // 평일
 						str += TD_day_start
-								+ DIV_day_start + day + DIV_end
+								+ SP_day_start + day + SP_end + "<br>"
 								+ "<input type='radio' name='roomselect'>합주실(소)<br>"
 								+ "<input type='radio' name='roomselect'>합주실(대)<br>"
 								+ "<input type='radio' name='roomselect'>커뮤니티<br>"
