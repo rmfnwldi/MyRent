@@ -9,7 +9,7 @@
 	//Calendar 객체 생성하기
 	var Calendar = new Date();
 	var SubCalendar = new Date();
-	
+
 	var year = Calendar.getFullYear(); // 년도
 	var month = Calendar.getMonth(); // 월   0~11
 	var today = Calendar.getDate(); // 일 
@@ -39,8 +39,7 @@
 		var TR_start = "<tr>";
 		var TR_end = "</tr>";
 
-		
-		
+		var TD_pass_start = "<td class='pass'>"
 		var TD_week_start = "<td class='week'>"; // 월요일 ~ 일요일을 나타낼 td
 		var TD_blank_start = "<td class=''blank>"; // blank (1일 이전의 빈칸)
 		var TD_today_start = "<td class='tdtoday'>"; // 오늘 날짜
@@ -48,9 +47,7 @@
 		var TD_saturday_start = "<td>";
 		var TD_sunday_start = "<td>";
 		var TD_end = "</td>";
-		
-		
-		
+
 		var DIV_today_start = "<div class='sptoday'>";
 		var DIV_day_start = "<div class='day'>";
 		var DIV_saturday_start = "<div class='saturday'>";
@@ -92,23 +89,46 @@
 				var day_month = SubCalendar.getMonth(); // 월
 				var day = Calendar.getDate(); // 날짜
 				var week_day = Calendar.getDay(); // 요일
+				var datevalue = year+"-"+(month+1)+"-"+day;
 
-				
+				var INPUT_room = "<span id='sp1'><input type='radio' name='roomselect' value='"+datevalue+"' class='room1'>합주실(소)</span><br>"
+						+ "<span id='sp2'><input type='radio' name='roomselect' value='"+datevalue+"' class='room2'>합주실(대)</span><br>"
+						+ "<span id='sp3'><input type='radio' name='roomselect' value='"+datevalue+"' class='room3'>커뮤니티</span><br>"
+						+ "<span id='sp4'><input type='radio' name='roomselect' value='"+datevalue+"' class='room4'>999홀</span><br>"
+						+ "<span id='sp5'><input type='radio' name='roomselect' value='"+datevalue+"' class='room5'>허브홀</span>";
+
+				/* console.log("day" + day);
+				console.log("today" + today);
+				console.log("day_month" + day_month);
+				console.log("month" + month);
+				console.log("day_year" + day_year);
+				console.log("year" + year); */
+
 				// 일요일이면 tr로 한칸 내린다
 				if (week_day == 0) {
 					str += TR_start;
 				}
 
+				// 해당하는 달에서 지나간 날짜를 막음
+				if (day < today && day_month == month && day_year == year) {
+
+					str += TD_pass_start + TD_end;
+
+					// 해당하는 달에서 지나간 달을 막음
+				} else if (year == day_year && day_month > month) {
+					str += TD_pass_start + TD_end;
+
+					// 해당하는 달에서 지나간 년도를 막음
+				} else if (day_year > year) {
+					str += TD_pass_start + TD_end;
+
+				}
+
 				// 오늘 날짜
-				if (day == today && day_month == month && day_year == year) {
-					str += TD_today_start
-							+ DIV_today_start + day + DIV_end
-							+ "<input type='radio' name='roomselect'>합주실(소)<br>"
-							+ "<input type='radio' name='roomselect'>합주실(대)<br>"
-							+ "<input type='radio' name='roomselect'>커뮤니티<br>"
-							+ "<input type='radio' name='roomselect'>999홀<br>"
-							+ "<input type='radio' name='roomselect'>허브홀호호"
-							+ TD_end;
+				else if (day == today && day_month == month && day_year == year) {
+
+					str += TD_today_start + DIV_today_start + day + DIV_end
+							+ INPUT_room + TD_end;
 				}
 
 				else {
@@ -117,38 +137,20 @@
 
 					case 0: // 일요일
 
-						str += TD_sunday_start
-								+ DIV_sunday_start + day + DIV_end
-								+ "<input type='radio' name='roomselect'>합주실(소)<br>"
-								+ "<input type='radio' name='roomselect'>합주실(대)<br>"
-								+ "<input type='radio' name='roomselect'>커뮤니티<br>"
-								+ "<input type='radio' name='roomselect'>999홀<br>"
-								+ "<input type='radio' name='roomselect'>허브홀"
-								+ TD_end;
+						str += TD_sunday_start + DIV_sunday_start + day
+								+ DIV_end + INPUT_room + TD_end;
+
 						break;
 
 					case 6: // 토요일
-
-						str += TD_saturday_start
-								+ DIV_saturday_start + day + DIV_end
-								+ "<input type='radio' name='roomselect'>합주실(소)<br>"
-								+ "<input type='radio' name='roomselect'>합주실(대)<br>"
-								+ "<input type='radio' name='roomselect'>커뮤니티<br>"
-								+ "<input type='radio' name='roomselect'>999홀<br>"
-								+ "<input type='radio' name='roomselect'>허브홀"
-								+ TD_end;
+						str += TD_saturday_start + DIV_saturday_start + day
+								+ DIV_end + INPUT_room + TD_end;
 						str += TR_end;
 						break;
 
 					default: // 평일
-						str += TD_day_start
-								+ DIV_day_start + day + DIV_end
-								+ "<input type='radio' name='roomselect'>합주실(소)<br>"
-								+ "<input type='radio' name='roomselect'>합주실(대)<br>"
-								+ "<input type='radio' name='roomselect'>커뮤니티<br>"
-								+ "<input type='radio' name='roomselect'>999홀<br>"
-								+ "<input type='radio' name='roomselect'>허브홀"
-								+ TD_end;
+						str += TD_day_start + DIV_day_start + day + DIV_end
+								+ INPUT_room + TD_end;
 						break;
 					}
 
@@ -167,9 +169,6 @@
 
 	}
 
-	
-	
-	
 	$(function() {
 
 		$("#btnback").click(function() {
@@ -205,9 +204,72 @@
 
 		});
 
+		$("#radioButton").click(
+
+				function() {
+
+					if ($(".room1").is(":checked")) {
+
+						var radioVal = $('input[name="roomselect"]:checked')
+								.val();
+
+						var spantext = $("#sp1").text();
+						var roomNumber = 1;
+
+						$("#roomId").val(roomNumber);
+						$("#date").val(radioVal);
+						$("#dateroom").val(radioVal + " 합주실(소)");
+
+					} else if ($(".room2").is(":checked")) {
+
+						var radioVal = $('input[name="roomselect"]:checked')
+								.val();
+
+						var spantext = $("#sp2").text();
+						var roomNumber = 2;
+
+						$("#roomId").val(roomNumber);
+						$("#date").val(radioVal);
+						$("#dateroom").val(radioVal + " 합주실(대)");
+
+					} else if ($(".room3").is(":checked")) {
+						var radioVal = $('input[name="roomselect"]:checked')
+								.val();
+
+						var spantext = $("#sp3").text();
+						var roomNumber = 3;
+
+						$("#roomId").val(roomNumber);
+						$("#date").val(radioVal);
+						$("#dateroom").val(radioVal + " 커뮤니티");
+
+					} else if ($(".room4").is(":checked")) {
+						var radioVal = $('input[name="roomselect"]:checked')
+								.val();
+
+						var spantext = $("#sp4").text();
+						var roomNumber = 4;
+
+						$("#roomId").val(roomNumber);
+						$("#date").val(radioVal);
+						$("#dateroom").val(radioVal + " 999홀");
+
+					} else if ($(".room5").is(":checked")) {
+						var radioVal = $('input[name="roomselect"]:checked')
+								.val();
+
+						var spantext = $("#sp5").text();
+						var roomNumber = 5;
+
+						$("#roomId").val(roomNumber);
+						$("#date").val(radioVal);
+						$("#dateroom").val(radioVal + " 허브홀");
+
+					}
+
+				});
+
 	});
-	
-	
 </script>
 
 </head>
@@ -232,7 +294,7 @@
 			<br> <br> <br> <br>
 
 
-
+			
 			<button id="btnback" class="btn btncalender">이전달</button>
 			<b id="monthTitle"></b>
 			<button id="btngo" class="btn btncalender">다음달</button>
@@ -243,18 +305,18 @@
 
 						<!-- 달력 들어가는 부분 -->
 
-
 					</table>
 					<div style="margin-bottom: 100px;">
-						날짜 : <input id="datespan">&emsp;&emsp; 공간 : <select
-							name="room">
-							<option value="">------공간 선택------</option>
-							<option value="">합주실(소)</option>
-							<option value="">합주실(대)</option>
-							<option value="">커뮤니티 스튜디오</option>
-							<option value="">999홀</option>
-							<option value="">허브홀</option>
-						</select>&emsp;&emsp; 시간 : <select name="roomtime">
+					
+						보여줌 : <input type="text" name="dateroom" id="dateroom"
+							readonly="readonly">&emsp;&emsp; 히든할거 : 
+						<!-- 히든으로 날짜 데이터 넘겨줌  -->
+						<input type="text" name="date" id="date">
+						<!-- 히든으로 공간 데이터 넘겨줌 -->
+						<input type="text"
+							name="roomId" id="roomId">
+
+						&emsp;&emsp; 시간 : <select name="roomtime">
 							<option value="">------시간 선택------</option>
 							<option value="">1</option>
 							<option value="">2</option>
@@ -263,8 +325,9 @@
 							<option value="">5</option>
 						</select>
 					</div>
-					<input class="btn btncalender" type="submit" value="결정하기">
+					<!-- <input class="btn btncalender" type="submit" value="결정하기"> -->
 				</form>
+				<button id="radioButton" class="btn btncalender">선택</button>
 			</div>
 		</div>
 	</div>
